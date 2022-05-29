@@ -1,0 +1,27 @@
+<div class="couponContainer">
+  <h1 class="logo">CVS/pharmacy</h1>
+  <div class="discount">{{coupon.discount}}</div>
+  <div class="discountDetails">{{coupon.discount}} {{coupon.description}}</div>
+  <div class="expiration">
+    <div class="item bold">
+      Expires 1/12/2021
+    </div>
+    <div class="item">
+      {{coupon.value}}
+    </div>
+  </div>
+  <div class="barcode">
+    {{coupon.barcode}}
+  </div>
+  <div class="barcodeID center">
+    {{coupon.barcode}}
+  </div>
+  <div class="legal center">
+    ExtraCare card required. Excludes lottery, money orders, postage stamps, milk, prescriptions, pre-paid cards, gift cards, pseudoephedrine products, other fees, deposits, taxes, alcohol and local exclusions. No cash back. Tax charged on pre-coupon price
+    where required. Limit of one purchase-based coupon, i.e., $4 off $20 purchase, per transaction. Not valid in specialty centers within CVS.
+  </div>
+  <div class="couponBottom">
+    <p>ExtraCare Card #: *7140 00130030598777</p>
+    <p>CPN#: ${{coupon.couponCode}}</p>
+  </div>
+</div>
